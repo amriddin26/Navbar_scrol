@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background: crimson;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 20px;
+    height: 30px;
+}
+
+header {
+    height: 300vh;
+    background: url(https://img.freepik.com/premium-photo/ultrarealistic-3d-mountain-scenery-with-reef-forest-clear-sky_899449-9173.jpg?w=2000);
+    position: relative;
+}
+
+.navbar.active {
+    background-color: crimson;
+    border-radius: 0 0 70px 70px;
+    height: 70px;
+}
+
+.navbar.activee {
+    background-color: chartreuse;
+    border-radius: 0px;
+}
+
+.navbar.activ {
+    background-color: gold;
+    box-shadow: 0 3px 10px black;
+    border-radius: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    transition: 2s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .logo h1 {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+ul li a {
+    margin-left: 30px;
+    font-size: 20px;
+    padding: 10px 25px;
+    color: white;
+}
+
+ul li a:hover {
+    background-color: white;
+    border-radius: 30px;
+    color: crimson;
+    box-shadow: 0 0 30px white, 0 0 50px white;
+}
